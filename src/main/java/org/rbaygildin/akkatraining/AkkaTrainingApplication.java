@@ -18,11 +18,4 @@ public class AkkaTrainingApplication {
         SpringApplication.run(AkkaTrainingApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner commandLineRunner() {
-        return args -> {
-            actorOf(JobSchedulerActor.class).tell("Hello world", null);
-        };
-    }
-
 }

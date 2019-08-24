@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:6432/parsing
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
